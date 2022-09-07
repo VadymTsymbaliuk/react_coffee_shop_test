@@ -1,0 +1,41 @@
+footer .container{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
+
+}
+.footer__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.footer__nav li:first-child{
+    position: relative;
+    padding-left: 35px;
+}
+
+.footer__nav li:first-child:before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/beans-nav-bottom.png");
+    background-position: center center;
+    background-size: contain;
+}
+
+.footer__nav li a{
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer__nav li a:hover{
+    color: #727171;
+
+}

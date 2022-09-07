@@ -1,0 +1,73 @@
+header {
+    max-height: 640px;
+    height: 100%;
+    background-image: url('../img/bg/header-bg-first-page.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header__nav li a {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.header__nav li:first-child{
+    position: relative;
+    padding-left: 30px;
+}
+
+.header__nav li:first-child:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    background-image: url("../img/beans-nav-top.png");
+    background-position: center center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+}
+
+.header__nav li a:hover {
+    text-decoration: underline;
+}
+
+.container__title {
+    text-align: center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 210px;
+}
+
+.container__title p {
+    font-weight: 700;
+    font-size: 1.71em;
+}
+
+.container__title button {
+    margin-top: 18px;
+    padding: 10px 42px;
+    background: none;
+    border: 1px solid #FFFFFF;
+    font-family: 'Merienda', cursive;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.container__title button:hover{
+    background-color: rgba(255, 255, 255, 0.06);
+}

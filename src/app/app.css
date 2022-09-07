@@ -3,71 +3,66 @@
     src: url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 html,
-body{
+body {
     font-family: 'Merienda', cursive;
     font-size: 14px;
 }
 
-h1{
+h1 {
     color: #fff;
     font-size: 2.85em;
 }
 
-ul{
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 /*header*/
-header{
-    max-height: 640px;
-    height: 100%;
-    background-image: url('../img/bg/header-bg-first-page.png');
+
+
+/*main*/
+
+section{
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+
+.section-first{
+    max-width: 590px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-first h2{
+    margin-bottom: 20px;
+}
+.section-first picture{
+    display: block;
+    margin-bottom: 40px;
+}
+.section-second{
+    text-align: center;
+    background-image: url('../img/bg/sec_section-bg.png');
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.header__container{
-    max-width: 80vw;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-.header__nav ul{
-    display: flex;
-    gap: 40px;
-}
-.header__nav li a{
-    color: #fff;
-}
-.header__nav li a:hover{
-    text-decoration: underline;
 }
 
-.container__title{
-    text-align: center;
-    color: #fff;
-    padding-top: 110px;
-    padding-bottom: 210px;
-}
-.container__title p{
-    font-weight: 700;
-    font-size: 1.71em;
+.section-second h2  {
+    margin-bottom: 40px;
 }
 
-.container__title button{
-    padding: 10px 42px;
-    background: none;
-    border: 1px solid #FFFFFF;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 3px;
-    color: #FFFFFF;
-    cursor: pointer;
-}
+
+/*footer*/
+
+
