@@ -1,4 +1,5 @@
 import {Component} from "react";
+import {Link} from "react-router-dom";
 import './header.css'
 import beansLogoWhite from "../img/beans-logo-white.svg";
 
@@ -13,13 +14,13 @@ class Header extends Component{
                     <nav className="header__nav">
                         <ul>
                             <li>
-                                <a href="#">coffee house</a>
+                                <Link to="/">Coffee house</Link>
                             </li>
                             <li>
-                                <a href="#">our coffee</a>
+                                <Link to="/our-coffee">Our coffee</Link>
                             </li>
                             <li>
-                                <a href="#">For your pleasure</a>
+                                <Link to="/for-your-pleasure">For your pleasure</Link>
                             </li>
                         </ul>
                     </nav>

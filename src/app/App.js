@@ -1,50 +1,62 @@
 import {Component} from "react";
 import "./app.css"
 
+
 import beansLogoWhite from '../img/beans-logo-white.svg';
 import beansLogoBlack from '../img/beans-logo-black.svg';
+
+import aromico2x from '../img/aromico-coffee-beans-2x.png';
+import aromico1x from '../img/aromico-coffee-beans-1x.png';
+import presto2x from '../img/presto-coffee-beans-2x.png';
+import presto1x from '../img/presto-coffee-beans-1x.png';
+import solimo2x from '../img/solimo-coffee-beans-2x.png';
+import solimo1x from '../img/solimo-coffee-beans-1x.png';
+
 
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 
 import CardContainer from "../cardContainer/CardContainer";
 
-
-class App extends Component{
+class App extends Component {
     constructor(props) {
         super(props);
-        this.state={
-            coffeeItems:[
+        this.state = {
+            coffeeItems: [
                 {
-                    name: "Aromico",
+                    name: "AROMISTICO Coffee",
                     weight: 1,
                     country: "Brazil",
-                    thumbnailL: "../img/aromico-coffee-beans-2x.png",
-                    thumbnailS: "../img/aromico-coffee-beans-1x.png",
+                    thumbnailL: aromico2x,
+                    thumbnailS: aromico1x,
+                    price: 6.99
 
                 },
                 {
-                    name: "Solimo",
-                    weight: 2,
-                    country: "USA",
-                    thumbnailL: "../img/solimo-coffee-beans-2x.png",
-                    thumbnailS: "../img/solimo-coffee-beans-1x.png",
-                },
-                {
-                    name: "Presto",
+                    name: "Presto Coffee Beans",
                     weight: 1,
                     country: "Kenia",
-                    thumbnailL: "../img/presto-coffee-beans-2x.png",
-                    thumbnailS: "../img/presto-coffee-beans-1x.png",
+                    thumbnailL: presto2x,
+                    thumbnailS: presto1x,
+                    price: 15.99
                 },
+                {
+                    name: "Solimo Coffee Beans",
+                    weight: 2,
+                    country: "USA",
+                    thumbnailL: solimo2x,
+                    thumbnailS: solimo1x,
+                    price: 10.73
+                }
             ]
         }
     }
+
     render() {
 
         return (
             <div className="App">
-                <Header />
+                <Header/>
                 <main>
                     <div className="container">
                         <section className="section-first">
@@ -67,7 +79,7 @@ class App extends Component{
                         </section>
                         <section className="section-second">
                             <h2>Our best</h2>
-                            <CardContainer  bestCoffee={this.state.coffeeItems}/>
+                            <CardContainer bestCoffee={this.state.coffeeItems}/>
                         </section>
 
                     </div>
